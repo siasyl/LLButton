@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   					To achieve the button picture and text left and right, right, up and down, under the arrangement
                    DESC
 
-  s.homepage     = "http://EXAMPLE/LLButton"
+  s.homepage     = "https://github.com/kevll/LLButton"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "kevll" => "753422875@qq.com" }
+  s.author             = { "kevll" => "kevliule@gmail.com" }
   # Or just: s.author    = "kevll"
   # s.authors            = { "kevll" => "753422875@qq.com" }
   # s.social_media_url   = "http://twitter.com/kevll"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/LLButton.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/kevll/LLButton.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "UIButton+LLExtension/**/*.{h,m}"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -134,5 +134,5 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-
+  s.dependency "Masonry"
 end
